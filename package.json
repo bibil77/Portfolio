@@ -19,7 +19,9 @@
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-multi-carousel": "^2.8.3",
+    "swiper": "^9.2.0"
   },
   "devDependencies": {
     "eslint": "latest",
