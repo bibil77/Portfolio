@@ -12,10 +12,7 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
-// import { Image } from "next/image";
 import { Stack } from "@mui/material";
-
-import "react-multi-carousel/lib/styles.css";
 
 // icon
 import ConstructionIcon from "@mui/icons-material/Construction";
