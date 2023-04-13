@@ -415,21 +415,21 @@ export default function agr() {
         >
           <SwiperSlide>
             <Machine
-              image="https://lh6.googleusercontent.com/joJet1ZnDSWh2BCuCunGMEeVWfZomikj4y7kSofZ7AMzU8OkDSRxyuyehIEPjp2QDETjGvPC1EiQVsXxW7WLLbhtwF_ErQWaQE6pxi3xO_noXChg-OWpN6bRTSioXhS4rQ=w1280"
+              image="https://lh3.googleusercontent.com/Dzuhw8YyNZzRozsybGn5Yd-nEUiiDaVoAMmYzmBKAnn2DpaX1aXx-UOVn2fzOaq-sYNven1jPG4aun7YMy3ne1jjHYHmSSX9yXDVN4dWRJjCmZMd8CW4rouCiMjI2v1QXw=w1280"
               name="Machine à thé"
               prix="30"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Machine
-              image="https://lh3.googleusercontent.com/rpGYLQ-EN_xoClePcxLAyXOoMD92E-pwQOgiMoiiuCqdq_WpxcC3Xrh52TrOdUAAPIiEtj0q83Igsi3W3Q1d-EBXdNkBYu6u36KhSDrzNKik_zO_g4adIHQgyYIXmeH1Cg=w1280"
+              image="https://lh3.googleusercontent.com/TZOmY9Of4crllwRU_O8r3FcGDPaoVmYVecZF27R86EyIG04zcMhOOF-WI99pk_jFReb6can3MdYMYiTChp4QDO1yplJtW--JPel-k6sSEjkxKkSTP0yrk_VPY2upotoXgA=w1280"
               name="Machine à café"
               prix="30"
             />
           </SwiperSlide>
           <SwiperSlide>
             <Machine
-              image="https://lh3.googleusercontent.com/rW7UBeUqWNLNiPupLkarE9RGdL8CQM4zOzKgmUtqurHtxH-MwGo2qmAE0sU5PYBaHp2UJ5XgY-qN5DsQSVu0qk_4NgHOYLX5TEJl_EMrO29IsVdkGxyGpgnh8WabUnjrBw=w1280"
+              image="https://lh5.googleusercontent.com/WsNO5aC2Cvv2GqQY5JaA8LnH2m9X82ksS7evzzTclNFNXXRTF4J_v-V7cRaR9adcX4wMQhFHizVRLqK4L-iBPj8VSmBvsFFhWGwehzvQS09QB17x7i8aES7FczUbtaKTDg=w1280"
               name="Machine à chocolat"
               prix="30"
               description="Le distributeur de boissons chaudes est idéal pour préparer et garder au chaud diverses boissons comme le chocolat chaud, le vin chaud ou le lait, ce qui en fait un accessoire indispensable sur les buffets en libre-service, "
@@ -437,7 +437,7 @@ export default function agr() {
           </SwiperSlide>
           <SwiperSlide>
             <Machine
-              image="https://lh3.googleusercontent.com/CfOP-Qf5rSuYDxgVz8ldpe170rk11UvQL35ucQrT81_x--UHrxZX2GT7V7k06x-qTJ0qzLLoeOQy35o1oMb-GlIMatjKXv7Ri_y8AtX2Gvgc2kEXle90N_vFjMMosBg2uw=w1280"
+              image="https://lh4.googleusercontent.com/hp26GewEdHvkUh-MtJ_TT8F0Wk0CgzkhD_lsgOIPat3ZfM3tUfdF2UGUJxeSr7EzBebEDZ6FRZyv-LzWMeSb2uhcsm7Xx_bKy9w5n3dzZjXP829Z4K1F1k0vt_SJoOnlhg=w1280"
               name="Barbe à papa"
               machine="bap"
               prix="50"
@@ -445,7 +445,7 @@ export default function agr() {
           </SwiperSlide>
           <SwiperSlide>
             <Machine
-              image="https://lh3.googleusercontent.com/CfOP-Qf5rSuYDxgVz8ldpe170rk11UvQL35ucQrT81_x--UHrxZX2GT7V7k06x-qTJ0qzLLoeOQy35o1oMb-GlIMatjKXv7Ri_y8AtX2Gvgc2kEXle90N_vFjMMosBg2uw=w1280"
+              image="https://lh4.googleusercontent.com/hp26GewEdHvkUh-MtJ_TT8F0Wk0CgzkhD_lsgOIPat3ZfM3tUfdF2UGUJxeSr7EzBebEDZ6FRZyv-LzWMeSb2uhcsm7Xx_bKy9w5n3dzZjXP829Z4K1F1k0vt_SJoOnlhg=w1280"
               name="Popcorn"
               machine="popcorn"
               prix="50"
