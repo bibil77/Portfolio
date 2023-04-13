@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -14,23 +14,16 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 // import { Image } from "next/image";
 import { Stack } from "@mui/material";
-import { Image } from "@mui/icons-material";
 
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 // icon
 import ConstructionIcon from "@mui/icons-material/Construction";
 
 // component
-import Section from "../component/section";
 import StructureGonflable from "../component/StructureGonflable";
 import Machine from "../component/Machine";
 import Tarif from "../component/Tarif";
-import SliderCard from "../component/SliderCard";
-
-// img
-import texas from "../assets/img/structureGonflable/texas.png";
 
 // Swiper
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -55,53 +48,6 @@ const settings = [
   "Contact",
 ];
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-    slidesToSlide: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
-
-const responsiveMachine = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5,
-    slidesToSlide: 5,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2, // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-    slidesToSlide: 1, // optional, default to 1.
-  },
-};
 export default function agr() {
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
