@@ -10,27 +10,23 @@ export default function FormationCard({
   listName,
 }) {
   const result = [];
-  //   function funcList() {
-  //     data.map((datas) => {
-  //       // console.log(datas.name);
-  //       if (datas.name === listName) {
-  //         console.log("validé");
-  //         datas.description.map((d, i) => {
-  //           console.log(d);
-  //           result.push(
-  //             <Typography key={i} variant="subtitle1">
-  //               • {d}
-  //             </Typography>
-  //           );
-  //         });
-  //       }
-  //       return result;
-  //     });
-  //   }
-
-  //   useEffect(() => {
-  //     funcList();
-  //   }, []);
+  data.map((datas) => {
+    // console.log(datas.name);
+    if (datas.name === listName) {
+      console.log("validé");
+      result.push(
+        datas.description.map((d, i) => {
+          console.log(d);
+          return (
+            <Typography key={i} variant="subtitle1">
+              • {d}
+            </Typography>
+          );
+        })
+      );
+    }
+    return result;
+  });
   return (
     <Stack direction="row" alignItems="center">
       <Typography variant="h6" color="#3f4040" mr={1}>
@@ -47,21 +43,7 @@ export default function FormationCard({
           {title}
         </Typography>
         {list ? (
-          data.map((datas) => {
-            // console.log(datas.name);
-            if (datas.name === listName) {
-              console.log("validé");
-              datas.description.map((d, i) => {
-                console.log(d);
-                result.push(
-                  <Typography key={i} variant="subtitle1">
-                    • {d}
-                  </Typography>
-                );
-              });
-            }
-            return result;
-          })
+          result
         ) : (
           <Typography variant="subtitle1">{description}</Typography>
         )}
