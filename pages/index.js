@@ -9,7 +9,7 @@ import FormationCard from "../component/FormationCard";
 export default function Index() {
   return (
     <Container>
-      {/* --------------HEADER --------------------*/}
+      {/* --------------HEADER ---------------------*/}
       <Stack
         direction="row"
         justifyContent="left"
