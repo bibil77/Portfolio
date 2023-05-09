@@ -11,12 +11,9 @@ export default function FormationCard({
 }) {
   const result = [];
   data.map((datas) => {
-    // console.log(datas.name);
     if (datas.name === listName) {
-      console.log("validé");
       result.push(
         datas.description.map((d, i) => {
-          console.log(d);
           return (
             <Typography key={i} variant="subtitle1">
               • {d}
@@ -28,8 +25,14 @@ export default function FormationCard({
     return result;
   });
   return (
-    <Stack direction="row" alignItems="center">
-      <Typography variant="h6" color="#3f4040" mr={1}>
+    <Stack direction="row" alignItems="center" mt={2}>
+      <Typography
+        variant="h6"
+        color="#3f4040"
+        mr={1}
+        maxWidth={120}
+        textAlign="center"
+      >
         {date}
       </Typography>
       <Stack
@@ -45,7 +48,9 @@ export default function FormationCard({
         {list ? (
           result
         ) : (
-          <Typography variant="subtitle1">{description}</Typography>
+          <Typography color="#4f5050" variant="subtitle1">
+            {description}
+          </Typography>
         )}
       </Stack>
     </Stack>

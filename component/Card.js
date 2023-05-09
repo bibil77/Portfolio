@@ -20,6 +20,7 @@ export default function Card({ children, border, title }) {
           fontWeight: 600,
           letterSpacing: 3,
         }}
+        pt={1}
       >
         {title}
       </Typography>
