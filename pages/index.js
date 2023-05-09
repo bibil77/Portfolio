@@ -73,6 +73,12 @@ export default function Index() {
           Javascript, système d'exploitation, SQL, Node JS,
           HTMUCSS, Reactjsl native, firebase"
         />
+        <FormationCard
+          date="DU 05/02/2023 au 18/03/2023 EFREI PARIS"
+          title="PROJET ACADÉMIQUE À LONDRES ( 6 SEMAINES) Porthsmouth university "
+          list={true}
+          listName="londre"
+        />
       </Card>
       {/* -------------------FIN FORMATION--------------------------- */}
     </Container>
