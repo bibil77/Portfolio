@@ -5,6 +5,7 @@ import { Avatar } from "@mui/material";
 import { Stack } from "@mui/material";
 import Card from "../component/Card";
 import FormationCard from "../component/FormationCard";
+import Image from "next/image";
 
 export default function Index() {
   return (
@@ -16,10 +17,22 @@ export default function Index() {
         sx={{
           backgroundColor: "#868a8d",
           color: "#fff",
+          pb: 2,
+          pt: 1,
         }}
       >
         {/* photo de profil */}
-        <Avatar alt="Benjamin DUPIN" src="/images/moi.jpg">
+        <Avatar
+          alt="Benjamin DUPIN"
+          src="/images/moi1.jpg"
+          sx={{
+            width: 200,
+            height: 200,
+            borderRadius: 5,
+            border: "4px solid #4f5050",
+            ml: 2,
+          }}
+        >
           BD
         </Avatar>
         <Stack ml={7}>
