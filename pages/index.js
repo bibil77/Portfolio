@@ -6,7 +6,7 @@ import { Stack } from "@mui/material";
 
 // component
 import Card from "../component/Card";
-import Po from "../component/po";
+import Po from "../component/Po";
 import FormationCard from "../component/FormationCard";
 import TextCard from "../component/TextCard";
 
