@@ -1,7 +1,7 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { Avatar, Button } from "@mui/material";
+import { Avatar, Button, Link } from "@mui/material";
 import { Stack } from "@mui/material";
 
 // component
@@ -98,9 +98,15 @@ export default function Index() {
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <EmailIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Link
+              href="mailto:dupin.benjamin28@gmail.com"
+              fontSize="large"
+              ml={3}
+              underline="none"
+              color="#000"
+            >
               dupin.benjamin28@gmail.com
-            </Typography>
+            </Link>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <PinDropIcon sx={{ fill: "#c49366" }} />
@@ -110,9 +116,16 @@ export default function Index() {
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <LanguageIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Link
+              href="https://www.linkedin.com/in/benjaminDupin"
+              fontSize="large"
+              ml={3}
+              color="#000"
+              underline="none"
+              target="_blank"
+            >
               https://www.linkedin.com/in/benjaminDupin
-            </Typography>
+            </Link>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <TimeToLeaveIcon sx={{ fill: "#c49366" }} />
