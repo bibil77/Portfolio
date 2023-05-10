@@ -1,7 +1,23 @@
-import { Avatar, Stack, Typography } from "@mui/material";
+import {
+  Avatar,
+  FormControl,
+  InputLabel,
+  MenuItem,
+  Select,
+  Stack,
+  Typography,
+  Link,
+} from "@mui/material";
 import { useTranslation } from "next-i18next";
+import { useState } from "react";
 export default function Header() {
   const { t } = useTranslation("header");
+  const [lang, setLang] = useState("fr");
+
+  const handleChange = (event) => {
+    setLang(event.target.value);
+  };
+
   return (
     <Stack
       direction="row"
@@ -41,8 +57,47 @@ export default function Header() {
           {t("title")}
         </Typography>
       </Stack>
-      <a href="/en">english</a>
-      <a href="/fr">francais</a>
+      <FormControl
+        sx={{
+          ml: "auto",
+          color: "#000",
+          "&:focus": {
+            borderColor: "#000",
+          },
+        }}
+      >
+        <InputLabel id="demo-simple-select-label">{t("lang.title")}</InputLabel>
+        <Select
+          labelId="demo-simple-select-label"
+          id="demo-simple-select"
+          value={lang}
+          label={t("lang.title")}
+          onChange={handleChange}
+        >
+          <MenuItem value={"fr"} sx={{ padding: 0 }}>
+            <Link
+              href="/fr"
+              underline="none"
+              color="#000"
+              textAlign="center"
+              sx={{ width: "100%", py: 1 }}
+            >
+              {t("lang.fr")}
+            </Link>
+          </MenuItem>
+          <MenuItem value={"en"} sx={{ padding: 0 }}>
+            <Link
+              href="/en"
+              underline="none"
+              color="#000"
+              textAlign="center"
+              sx={{ width: "100%", py: 1 }}
+            >
+              {t("lang.en")}
+            </Link>
+          </MenuItem>
+        </Select>
+      </FormControl>
     </Stack>
   );
 }

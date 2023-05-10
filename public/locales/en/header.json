@@ -1,3 +1,8 @@
 {
-  "title": "DESIGNER-DEVELOPER"
+  "title": "DESIGNER-DEVELOPER",
+  "lang": {
+    "title": "Languages",
+    "fr": "French",
+    "en": "English"
+  }
 }

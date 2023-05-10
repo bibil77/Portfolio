@@ -1,3 +1,8 @@
 {
-  "title": "CONCEPTEUR DÉVELOPPEUR"
+  "title": "CONCEPTEUR DÉVELOPPEUR",
+  "lang": {
+    "title": "Langages",
+    "fr": "Français",
+    "en": "Anglais"
+  }
 }
