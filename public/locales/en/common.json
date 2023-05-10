@@ -1,0 +1,93 @@
+{
+  "title": "this is a title",
+  "description": "this is a description",
+  "PO": {
+    "title": "PROFILE & OBJECTIVES",
+    "description": "Passionate about computer science and creation, I decided to make my job. I am currently a student in computer development. In order to launch my career and to consolidate my field of competences, I am looking for an alternation in programming-development"
+  },
+  "formation": {
+    "title": "FORMATION",
+    "description1": {
+      "date": "SINCE 2021 EFREI PARIS",
+      "title": "ENGINEERING & DIGITAL LICENSE",
+      "text": "Mathematics, English, Communication, Javascript, système d'exploitation, SQL, Node JS, HTML & CSS, ReactjJS / native, firebase"
+    },
+    "description2": {
+      "date": "FROM 05/02/2023 to 18/03/2023 EFREI PARIS",
+      "title": "ACADEMIC PROJECT IN LONDON ( 6 WEEKS) Porthsmouth university",
+      "text": {
+        "0": "Realization of an application according to the expectations of a customer",
+        "1": "Courses: management, team management, artificial intelligence"
+      }
+    },
+    "description3": {
+      "date": "2020-2021 GEORGE SAND",
+      "title": "GENERAL BACCALAUREATE",
+      "text": {
+        "0": "Mathematics Specialty",
+        "1": "Engineering Science Specialty",
+        "2": "Physics and Chemistry Specialty (11th Grade)"
+      }
+    }
+  },
+  "ep": {
+    "title": "PROFESSIONAL EXPERIENCES",
+    "description1": {
+      "title": "2018-Computer technician (Internship) at the city hall of Lésigny",
+      "text": {
+        "0": "Curative telephone maintenance, on an internet network as well as various computer maintenance",
+        "1": "Fact of the creation / administration of email address"
+      }
+    },
+    "description2": {
+      "title": "2017- Biomedical technician (internship) at the former Saint-Jean clinic in Le Mée Sur Seine",
+      "text": "Maintenance and repair of several surgical machines"
+    }
+  },
+  "pa": {
+    "title": "ACADEMIC PROJECTS",
+    "text": {
+      "0": "Dice Project: Creation of an application for Dice Board GameLounge",
+      "1": "Netflix Project: Project realized in April 2022 with the use of HTMLS/ CSS3: carbon copy of the Netflix Home page"
+    }
+  },
+  "permis": "Driver's License (Vehicle)",
+  "competence": {
+    "title": "IT SKILLS",
+    "description1": {
+      "title": "Development tools/ programming:"
+    },
+    "description2": {
+      "title": "Office tools:"
+    },
+    "description3": {
+      "title": "Other:",
+      "text": "3D Printer"
+    }
+  },
+  "ss": {
+    "title": "SOFT SKILLS",
+    "text": {
+      "0": "Self-taught",
+      "1": "Autonomous",
+      "2": "Doing reverse scans",
+      "3": "Team spirit"
+    }
+  },
+  "lang": {
+    "title": "LANGUAGES",
+    "text": {
+      "0": "English: Intermediate (B1)",
+      "1": "Spanish: Introductory (A1)"
+    }
+  },
+  "ci": {
+    "title": "POINT OF INTEREST",
+    "text": {
+      "0": "Mountain biking: downhill and forest",
+      "1": "Cinema (science fiction, thriller)",
+      "2": "Video games (fps, management, survival, mini-games)",
+      "3": "Karting (race between friends)"
+    }
+  }
+}

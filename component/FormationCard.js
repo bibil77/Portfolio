@@ -1,6 +1,6 @@
 import { Stack, Typography } from "@mui/material";
 import data from "../data.js";
-import { useEffect } from "react";
+import { useTranslation } from "next-i18next";
 
 export default function FormationCard({
   date,
@@ -9,6 +9,7 @@ export default function FormationCard({
   list,
   listName,
 }) {
+  const { t } = useTranslation("common");
   const result = [];
   data.map((datas) => {
     if (datas.name === listName) {
@@ -16,7 +17,7 @@ export default function FormationCard({
         datas.description.map((d, i) => {
           return (
             <Typography key={i} variant="subtitle1">
-              • {d}
+              • {t(d)}
             </Typography>
           );
         })

@@ -1,8 +1,9 @@
-import { BorderColor, BorderStyle } from "@mui/icons-material";
 import { Stack } from "@mui/material";
 import { Typography } from "@mui/material";
+import { useTranslation } from "next-i18next";
 
 export default function Card({ children, border, title }) {
+  const { t } = useTranslation("common");
   return (
     <Stack
       maxWidth="sm"
@@ -22,7 +23,7 @@ export default function Card({ children, border, title }) {
         }}
         pt={1}
       >
-        {title}
+        {t(title)}
       </Typography>
 
       {children}

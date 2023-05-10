@@ -1,12 +1,15 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import { Avatar } from "@mui/material";
+import { Avatar, Button } from "@mui/material";
 import { Stack } from "@mui/material";
+
 // component
 import Card from "../component/Card";
+import Po from "../component/po";
 import FormationCard from "../component/FormationCard";
 import TextCard from "../component/TextCard";
+
 // icon
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import EmailIcon from "@mui/icons-material/Email";
@@ -15,91 +18,57 @@ import LanguageIcon from "@mui/icons-material/Language";
 import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
+// translate
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import Header from "../component/Header";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "header"])),
+      // Will be passed to the page component as props
+    },
+  };
+}
+
 export default function Index() {
+  const { t } = useTranslation("common");
+  // const { t } = useTranslation("common");
   return (
     <Container>
       {/* --------------HEADER ---------------------*/}
-      <Stack
-        direction="row"
-        justifyContent="left"
-        sx={{
-          backgroundColor: "#868a8d",
-          color: "#fff",
-          pb: 2,
-          pt: 1,
-        }}
-      >
-        {/* photo de profil */}
-        <Avatar
-          alt="Benjamin DUPIN"
-          src="/images/moi1.jpg"
-          sx={{
-            width: 200,
-            height: 200,
-            borderRadius: 5,
-            border: "4px solid #4f5050",
-            ml: 2,
-          }}
-        >
-          BD
-        </Avatar>
-        <Stack ml={7}>
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{
-              fontWeight: 500,
-            }}
-          >
-            BENJAMIN DUPIN
-          </Typography>
-          <Typography variant="h5" component="h2" mt={2} ml={2}>
-            CONCEPTEUR <br />
-            DÉVELOPPEUR
-          </Typography>
-        </Stack>
-      </Stack>
+      <Header />
       {/* --------------------FIN HEADER----------------------------- */}
       <Stack direction="row">
         {/* ########################################################[COTÉ GAUCHE]######################################################################### */}
         <Stack>
           {/* -------------------PROFILS & OBEJECT--------------------------- */}
-          <Card title="PROFIL & OBJECTIFS">
-            <Typography color="#4f5050" ml={1}>
-              Passionné d'infomatique et de création, j'ai décidé d'en faire mon
-              métier. Je suis actuellement étudiant en{" "}
-              <strong>développement informatique.</strong>
-              Afin de lancer ma carrière et de consolider mon champ de
-              compétences, je suis à la recherche d'une alternance dans la
-              programmation-développement
-            </Typography>
-          </Card>
+          <Po />
           {/* -------------------FIN PROFILS & OBEJECT--------------------------- */}
           {/* -------------------FORMATION--------------------------- */}
           <Card border={true} title="FORMATION">
             <FormationCard
-              date="DEPUIS 2021 EFREI PARIS"
-              title="LICENCE INGÉNERIE & NUMÉRIQUES"
-              description="Mathématiques, Anglais, Communication,
-          Javascript, système d'exploitation, SQL, Node JS,
-          HTMUCSS, Reactjsl native, firebase"
+              date={t("formation.description1.date")}
+              title={t("formation.description1.title")}
+              description={t("formation.description1.text")}
             />
             <FormationCard
-              date="DU 05/02/2023 au 18/03/2023 EFREI PARIS"
-              title="PROJET ACADÉMIQUE À LONDRES ( 6 SEMAINES) Porthsmouth university "
+              date={t("formation.description2.date")}
+              title={t("formation.description2.title")}
               list={true}
               listName="londre"
             />
             <FormationCard
-              date="2020-2021 GEORGE SAND"
-              title="BACCALAURÉAT GÉNÉRAL"
+              date={t("formation.description3.date")}
+              title={t("formation.description3.title")}
               list={true}
               listName="bac"
             />
           </Card>
           {/* -------------------FIN FORMATION--------------------------- */}
           {/* -------------------EXPERIENCE--------------------------- */}
-          <Card border={true} title="EXPÉRIENCES PROFESSIONNELS">
+          <Card border={true} title="ep.title">
             <TextCard title={true} listName="exp" />
           </Card>
           {/* -------------------FIN EXPERIENCE--------------------------- */}
@@ -148,7 +117,7 @@ export default function Index() {
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <TimeToLeaveIcon sx={{ fill: "#c49366" }} />
             <Typography variant="body" fontSize="large" ml={3}>
-              Permis B (Véhiculé)
+              {t("permis")}
             </Typography>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
@@ -159,22 +128,22 @@ export default function Index() {
           </Stack>
           {/* ----------------------FIN INFORMATION PERSONNEL----------------------- */}
           {/* ----------------------COMPÉTENCE IT----------------------- */}
-          <Card title="COMPÉTENCE IT" border={true}>
+          <Card title="competence.title" border={true}>
             <TextCard title={true} listName="competence" />
           </Card>
           {/* ----------------------FIN COMPÉTENCE IT----------------------- */}
           {/* ----------------------SOFT SKILLS----------------------- */}
-          <Card title="SOFT SKILLS" border={true}>
+          <Card title="ss.title" border={true}>
             <TextCard listName="skill" />
           </Card>
           {/* ----------------------FIN SOFT SKILLS----------------------- */}
           {/* ----------------------LANGUES----------------------- */}
-          <Card title="LANGUES" border={true}>
+          <Card title="lang.title" border={true}>
             <TextCard listName="lang" />
           </Card>
           {/* ----------------------FIN LANGUES----------------------- */}
           {/* ----------------------CENTRE D'INTÉRÊT----------------------- */}
-          <Card title="CENTRE D'INTÉRÊT" border={true}>
+          <Card title="ci.title" border={true}>
             <TextCard listName="centreIt" />
           </Card>
           {/* ----------------------FIN CENTRE D'INTÉRÊT----------------------- */}

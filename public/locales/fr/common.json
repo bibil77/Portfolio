@@ -1,0 +1,93 @@
+{
+  "title": "ceci est un titre",
+  "description": "ceci est une description",
+  "PO": {
+    "title": "PROFIL & OBJECTIFS",
+    "description": "Passionné d'infomatique et de création, j'ai décidé d'en faire mon métier. Je suis actuellement étudiant en développement informatique.Afin de lancer ma carrière et de consolider mon champ de compétences, je suis à la recherche d'une alternance dans la programmation-développement"
+  },
+  "formation": {
+    "title": "FORMATION",
+    "description1": {
+      "date": "DEPUIS 2021 EFREI PARIS",
+      "title": "LICENCE INGÉNERIE & NUMÉRIQUES",
+      "text": "Mathématiques, Anglais, Communication, Javascript, système d'exploitation, SQL, Node JS, HTML/CSS, ReactJS / native, firebase"
+    },
+    "description2": {
+      "date": "DU 05/02/2023 au 18/03/2023 EFREI PARIS",
+      "title": "PROJET ACADÉMIQUE À LONDRES ( 6 SEMAINES) Porthsmouth university",
+      "text": {
+        "0": "Réalisation d'une application suivant les attentes d'un clients",
+        "1": "Cours: management, gestion d'équipe,intelligence artificielle"
+      }
+    },
+    "description3": {
+      "date": "2020-2021 GEORGE SAND",
+      "title": "BACCALAURÉAT GÉNÉRAL",
+      "text": {
+        "0": "Spécialité Mathématique",
+        "1": "Spécialité Science de l'ingénieur",
+        "2": "Spécialité physique chimie (en première)"
+      }
+    }
+  },
+  "ep": {
+    "title": "EXPÉRIENCES PROFESSIONNELS",
+    "description1": {
+      "title": "2018-Technicien informatique (Stage) à la mairie de Lésigny",
+      "text": {
+        "0": "Maintenance curatives téléphonques, sur un réseau internet ainsique diverse maintenance informatique",
+        "1": "Fait de la création/ gestion d'adresse mail"
+      }
+    },
+    "description2": {
+      "title": "2017- Technicien biomédicale (stage) dans l'ancienne clinique Saint-Jean au Mée Sur Seine",
+      "text": "Maintenance et réparation sur plusieurs machines chirurgical"
+    }
+  },
+  "pa": {
+    "title": "PROJETS ACADÉMIQUE",
+    "text": {
+      "0": "Projet Dice: Création d'une application pour Dice Board GameLounge",
+      "1": "Projet Netflix: Projet réalise en avril 2022 avec l'utilisation de HTMLS/ CSS3: copie conforme de la page Home de Netflix"
+    }
+  },
+  "permis": "Permis B (Véhiculé)",
+  "competence": {
+    "title": "COMPÉTENCE IT",
+    "description1": {
+      "title": "Outils de développement/ programmation:"
+    },
+    "description2": {
+      "title": "Outils bureautiques:"
+    },
+    "description3": {
+      "title": "Autre:",
+      "text": "Imprimante 3D"
+    }
+  },
+  "ss": {
+    "title": "SOFT SKILLS",
+    "text": {
+      "0": "Autodidacte",
+      "1": "Autonome",
+      "2": "Faire des rétroplannings",
+      "3": "Esprit d'équipe"
+    }
+  },
+  "lang": {
+    "title": "LANGUES",
+    "text": {
+      "0": "Anglais: Intermédiaire (B1)",
+      "1": "Espagnol: Introductif (A1)"
+    }
+  },
+  "ci": {
+    "title": "CENTRE D'INTÉRÊT",
+    "text": {
+      "0": "VTT: de descente et en forêt",
+      "1": "Cinéma (science fiction, thriller)",
+      "2": "Jeux vidéo (fps, gestion, survie,mini-jeux)",
+      "3": "Karting (course entre amis)"
+    }
+  }
+}

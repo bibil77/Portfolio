@@ -2,34 +2,28 @@ const data = [
   {
     name: "londre",
     description: [
-      "Réalisation d'une application suivant les attentes d'un clients",
-      "cours: management, gestion d'équipe,intelligence artificielle",
+      "formation.description2.text.0",
+      "formation.description2.text.1",
     ],
   },
   {
     name: "bac",
     description: [
-      "Spécialité Mathématique",
-      "Spécialité Science de l'ingénieur",
-      "Spécialité physique chimie (en première)",
+      "formation.description3.text.0",
+      "formation.description3.text.1",
+      "formation.description3.text.2",
     ],
   },
   {
     name: "exp",
     contenue: [
       {
-        titre: "2018-Technicien informatique (Stage) à la mairie de Lésigny",
-        description: [
-          "Maintenance curatives téléphonques, sur un réseau internet ainsique diverse maintenance informatique",
-          "Fait de la création/ gestion d'adresse mail",
-        ],
+        titre: "ep.description1.title",
+        description: ["ep.description1.text.0", "ep.description1.text.1"],
       },
       {
-        titre:
-          "2017- Technicien biomédicale (stage) dans l'ancienne clinique Saint-Jean au Mée Sur Seine",
-        description: [
-          "Maintenance et réparation sur plusieurs machines chirurgical",
-        ],
+        titre: "ep.description2.title",
+        description: ["ep.description2.text"],
       },
     ],
   },
@@ -37,10 +31,7 @@ const data = [
     name: "projets",
     contenue: [
       {
-        description: [
-          "Projet Dice: Création d'une application pour Dice Board GameLounge",
-          "Projet Netflix: Projet réalise en avril 2022 avec l'utilisation de HTMLS/ CSS3: copie conforme de la page Home de Netflix",
-        ],
+        description: ["pa.text.0", "pa.text.1"],
       },
     ],
   },
@@ -48,7 +39,7 @@ const data = [
     name: "competence",
     contenue: [
       {
-        titre: "Outils de développement/ programmation:",
+        titre: "competence.description1.title",
         description: [
           "HTML & CSS",
           "Javascript/ Java",
@@ -58,12 +49,12 @@ const data = [
         ],
       },
       {
-        titre: "Outils bureautiques:",
+        titre: "competence.description2.title",
         description: ["Microsoft Office"],
       },
       {
-        titre: "Autre:",
-        description: ["Imprimante 3D"],
+        titre: "competence.description3.title",
+        description: ["competence.description3.text"],
       },
     ],
   },
@@ -71,12 +62,7 @@ const data = [
     name: "skill",
     contenue: [
       {
-        description: [
-          "Autodidacte",
-          "Autonome",
-          "Faire des rétroplannings",
-          "Esprit d'équipe",
-        ],
+        description: ["ss.text.0", "ss.text.1", "ss.text.2", "ss.text.3"],
       },
     ],
   },
@@ -84,10 +70,7 @@ const data = [
     name: "lang",
     contenue: [
       {
-        description: [
-          "Anglais: Intermédiaire (B1)",
-          "Espagnol: introductif (A1)",
-        ],
+        description: ["lang.text.0", "lang.text.1"],
       },
     ],
   },
@@ -95,12 +78,7 @@ const data = [
     name: "centreIt",
     contenue: [
       {
-        description: [
-          "VTT: de descente et en forêt",
-          "Cinéma (science fiction, thriller)",
-          "Jeux vidéo (fps, gestion, survie,mini-jeux)",
-          "Karting (course entre amis)",
-        ],
+        description: ["ci.text.0", "ci.text.1", "ci.text.2", "ci.text.3"],
       },
     ],
   },
