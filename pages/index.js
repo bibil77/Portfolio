@@ -36,11 +36,16 @@ export default function Index() {
   const { t } = useTranslation("common");
   // const { t } = useTranslation("common");
   return (
-    <Container>
+    <Container sx={{ px: { xs: 0 } }}>
       {/* --------------HEADER ---------------------*/}
       <Header />
       {/* --------------------FIN HEADER----------------------------- */}
-      <Stack direction="row">
+      <Stack
+        sx={{
+          flexDirection: { xs: "column", md: "row" },
+          justifyContent: "space-between",
+        }}
+      >
         {/* ########################################################[COTÉ GAUCHE]######################################################################### */}
         <Stack>
           {/* -------------------PROFILS & OBEJECT--------------------------- */}
@@ -83,9 +88,9 @@ export default function Index() {
 
         <Stack
           sx={{
-            borderLeft: 2,
-            borderLeftColor: "#8d9090",
-            ml: 5,
+            borderLeft: { xs: 0, md: 2 },
+            borderLeftColor: { xs: "none", md: "#8d9090" },
+            ml: { xs: 0, md: 5 },
             mt: 5,
           }}
         >

@@ -26,24 +26,44 @@ export default function FormationCard({
     return result;
   });
   return (
-    <Stack direction="row" alignItems="center" mt={2}>
+    <Stack
+      alignItems="center"
+      mt={2}
+      sx={{
+        flexDirection: { xs: "column", md: "row" },
+        borderTop: { xs: list ? 3 : 0, md: 0 },
+        mx: { xs: 4, md: 0 },
+      }}
+    >
       <Typography
         variant="h6"
         color="#3f4040"
         mr={1}
-        maxWidth={120}
-        textAlign="center"
+        sx={{
+          maxWidth: { xs: "none", md: 120 },
+          textAlign: { xs: "none", md: "center" },
+          borderBottom: { xs: 3, md: "none" },
+          borderRadius: { xs: 2, md: "none" },
+          marginTop: { xs: list ? 3 : 0, md: 0 },
+        }}
       >
         {date}
       </Typography>
       <Stack
         pl={2}
         sx={{
-          borderLeft: 4,
-          borderLeftColor: "#8d9090",
+          borderLeft: { xs: 0, md: 4 },
+          borderLeftColor: { md: "#8d9090" },
         }}
       >
-        <Typography variant="h6" color="#3f4040">
+        <Typography
+          variant="h6"
+          color="#3f4040"
+          sx={{
+            marginTop: { xs: 3, md: 0 },
+            textAlign: { xs: "center", md: "none" },
+          }}
+        >
           {title}
         </Typography>
         {list ? (

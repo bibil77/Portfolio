@@ -32,7 +32,7 @@ export default function Header() {
       {/* photo de profil */}
       <Avatar
         alt="Benjamin DUPIN"
-        src="/images/moi1.jpg"
+        // src="/images/moi1.jpg"
         sx={{
           width: 200,
           height: 200,
