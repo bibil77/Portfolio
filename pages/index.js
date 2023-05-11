@@ -23,18 +23,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Header from "../component/Header";
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["common", "header"])),
-      // Will be passed to the page component as props
-    },
-  };
-}
-
 export default function Index() {
   const { t } = useTranslation("common");
-  // const { t } = useTranslation("common");
   return (
     <Container sx={{ px: { xs: 0 } }}>
       {/* --------------HEADER ---------------------*/}
@@ -109,6 +99,7 @@ export default function Index() {
               ml={3}
               underline="none"
               color="#000"
+              sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}
             >
               dupin.benjamin28@gmail.com
             </Link>
@@ -128,8 +119,9 @@ export default function Index() {
               color="#000"
               underline="none"
               target="_blank"
+              sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}
             >
-              https://www.linkedin.com/in/benjaminDupin
+              www.linkedin.com/in/benjaminDupin
             </Link>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
@@ -170,4 +162,13 @@ export default function Index() {
       </Stack>
     </Container>
   );
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common", "header"])),
+      // Will be passed to the page component as props
+    },
+  };
 }
