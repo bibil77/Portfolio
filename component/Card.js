@@ -13,7 +13,7 @@ export default function Card({ children, border, title }) {
       sx={{
         borderTop: border ? 3 : 0,
         borderBottom: { xs: title === "PROJETS ACADÉMIQUE" ? 3 : 0, md: 0 },
-        borderColor: "#8d9090",
+        borderColor: { xs: "#8d9090", md: "#8d9090" },
       }}
     >
       <Typography
