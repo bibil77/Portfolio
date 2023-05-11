@@ -9,6 +9,8 @@ import Card from "../component/Card";
 import Po from "../component/Po";
 import FormationCard from "../component/FormationCard";
 import TextCard from "../component/TextCard";
+import Header from "../component/Header";
+import DrawerMenu from "../component/DrawerMenu";
 
 // icon
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
@@ -21,7 +23,6 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 // translate
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-import Header from "../component/Header";
 
 export default function Index() {
   const { t } = useTranslation("common");

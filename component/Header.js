@@ -11,9 +11,9 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
 import { Link, Stack } from "@mui/material";
 import { useTranslation } from "next-i18next";
+import DrawerMenu from "./DrawerMenu";
 
 const pages = ["À Propos de moi", "Compétence", "Centre D'intérêt"];
 
@@ -41,29 +41,34 @@ function Header() {
   return (
     <AppBar position="static" sx={{ backgroundColor: "#868a8d" }}>
       <Container maxWidth="xl" sx={{ py: 1 }}>
-        <Toolbar disableGutters sx={{ alignItems: "start" }}>
-          <Avatar
-            alt="Benjamin Dupin"
-            src="./images/moi1.jpg"
-            sx={{
-              display: { xs: "none", sm: "flex" },
-              width: 200,
-              height: 200,
-              borderRadius: 5,
-              border: "4px solid #4f5050",
-            }}
-          />
-          <Stack>
+        <Toolbar
+          disableGutters
+          sx={{ alignItems: "start", justifyContent: "space-between" }}
+        >
+          <Stack direction="row">
+            <Avatar
+              alt="Benjamin Dupin"
+              src="./images/moi1.jpg"
+              sx={{
+                display: { xs: "none", sm: "flex" },
+                width: 200,
+                height: 200,
+                borderRadius: 5,
+                border: "4px solid #4f5050",
+              }}
+            />
+            <DrawerMenu />
+          </Stack>
+          <Stack sx={{ display: { xs: "none", md: "flex" } }}>
             <Typography
               noWrap
               variant="h4"
               component="h1"
               href="/"
               sx={{
-                ml: 3,
+                ml: { xs: 0, lg: 3 },
                 mr: 2,
                 mt: 2,
-                display: { xs: "none", md: "flex" },
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
@@ -81,10 +86,45 @@ function Header() {
               sx={{
                 ml: 6,
                 mt: 1,
-                display: { xs: "none", md: "flex" },
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              {t("title")}
+            </Typography>
+          </Stack>
+          <Stack sx={{ display: { xs: "flex", md: "none" } }}>
+            <Typography
+              noWrap
+              variant="h4"
+              component="h1"
+              href="/"
+              sx={{
+                mr: 2,
+                mt: 2,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                // letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              BENJAMIN DUPIN
+            </Typography>
+            <Typography
+              variant="h6"
+              component="h2"
+              noWrap
+              href="/"
+              sx={{
+                ml: 3,
+                mt: 1,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                // letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
               }}
@@ -96,67 +136,7 @@ function Header() {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              onClick={handleOpenNavMenu}
-              color="inherit"
-            >
-              <MenuIcon />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", lg: "flex" },
               justifyContent: "end",
               mr: 2,
             }}
