@@ -4,6 +4,12 @@
     "title": "Langages",
     "fr": "Français",
     "flag": "./images/french.jpg",
-    "en": "Anglais"
+    "en": "Anglais",
+    "setting": "Ouvrir le menu des langues",
+    "nav": {
+      "0": "À Propos de moi",
+      "1": "Compétence",
+      "2": "Projects"
+    }
   }
 }

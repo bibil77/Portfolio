@@ -1,19 +1,24 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Avatar, IconButton } from "@mui/material";
+import { Avatar, IconButton, Link } from "@mui/material";
+import { useTranslation } from "next-i18next";
+import InfoIcon from "@mui/icons-material/Info";
+import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
+
+import FolderCopyIcon from "@mui/icons-material/FolderCopy";
 
 export default function DrawerMenu() {
+  const href = ["/", "/", "/Exemple"];
+
+  const { t } = useTranslation("header");
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -54,14 +59,34 @@ export default function DrawerMenu() {
       />
       <Divider />
       <List>
-        {["À Propos de moi", "Compétence", "Centre D'intérêt"].map(
+        {[t("lang.nav.0"), t("lang.nav.1"), t("lang.nav.2")].map(
           (text, index) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                  {index === 0 ? (
+                    <InfoIcon />
+                  ) : index === 1 ? (
+                    <ArrowCircleUpIcon />
+                  ) : (
+                    <FolderCopyIcon />
+                  )}
                 </ListItemIcon>
-                <ListItemText primary={text} />
+                {/* <ListItemText primary={text} /> */}
+                <Link
+                  href={
+                    index === 0
+                      ? href[index]
+                      : index === 1
+                      ? href[index]
+                      : href[index]
+                  }
+                  underline="none"
+                  key={index}
+                  color="#5f5f5f"
+                >
+                  {text}
+                </Link>
               </ListItemButton>
             </ListItem>
           )

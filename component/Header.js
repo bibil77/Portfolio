@@ -8,18 +8,19 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
-import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import { Link, Stack } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import DrawerMenu from "./DrawerMenu";
 
-const pages = ["À Propos de moi", "Compétence", "Centre D'intérêt"];
-
 function Header() {
   const { t } = useTranslation("header");
+
+  const pages = [t("lang.nav.0"), t("lang.nav.1"), t("lang.nav.2")];
+  const href = ["/", "/", "/Exemple"];
   const settings = [t("lang.fr"), t("lang.en")];
+
   const [anchorElNav, setAnchorElNav] = useState(null);
   const [anchorElUser, setAnchorElUser] = useState(null);
 
@@ -141,19 +142,27 @@ function Header() {
               mr: 2,
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page}
+            {pages.map((page, i) => (
+              <Link
+                href={i === 0 ? href[i] : i === 1 ? href[i] : href[i]}
+                underline="none"
+                key={i}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{
+                  mt: 3,
+                  fontWeight: 500,
+                  color: "white",
+                  display: "block",
+                  mr: i === 2 ? 0 : 2,
+                }}
               >
                 {page}
-              </Button>
+              </Link>
             ))}
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="Open settings">
+            <Tooltip title={t("lang.setting")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="Benjamin DUPIN"
