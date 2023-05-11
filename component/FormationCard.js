@@ -40,7 +40,7 @@ export default function FormationCard({
         color="#3f4040"
         mr={1}
         sx={{
-          maxWidth: { xs: "none", md: 120 },
+          maxWidth: { xs: "none", md: "120px" },
           textAlign: { xs: "none", md: "center" },
           borderBottom: { xs: 3, md: "none" },
           borderRadius: { xs: 2, md: "none" },

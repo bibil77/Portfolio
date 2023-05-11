@@ -1,3 +1,4 @@
+import { Block } from "@mui/icons-material";
 import {
   Avatar,
   FormControl,
@@ -32,13 +33,24 @@ export default function Header() {
       {/* photo de profil */}
       <Avatar
         alt="Benjamin DUPIN"
-        // src="/images/moi1.jpg"
+        src="/images/moi1.jpg"
         sx={{
+          display: { xs: "none", sm: "flex" },
           width: 200,
           height: 200,
           borderRadius: 5,
           border: "4px solid #4f5050",
           ml: 2,
+        }}
+      >
+        BD
+      </Avatar>
+      {/* photo de profil for xs*/}
+      <Avatar
+        alt="Benjamin DUPIN"
+        src="/images/moi1.jpg"
+        sx={{
+          display: { xs: "flex", sm: "none" },
         }}
       >
         BD
@@ -60,6 +72,7 @@ export default function Header() {
       <FormControl
         sx={{
           ml: "auto",
+          mr: 2,
           color: "#000",
           "&:focus": {
             borderColor: "#000",
