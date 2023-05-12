@@ -65,7 +65,6 @@ function Header() {
               noWrap
               variant="h4"
               component="h1"
-              href="/"
               sx={{
                 ml: { xs: 0, lg: 3 },
                 mr: 2,
@@ -83,7 +82,6 @@ function Header() {
               variant="h6"
               component="h2"
               noWrap
-              href="/"
               sx={{
                 ml: 6,
                 mt: 1,
@@ -102,7 +100,6 @@ function Header() {
               noWrap
               variant="h4"
               component="h1"
-              href="/"
               sx={{
                 mr: 2,
                 mt: 2,
@@ -119,7 +116,6 @@ function Header() {
               variant="h6"
               component="h2"
               noWrap
-              href="/"
               sx={{
                 ml: 3,
                 mt: 1,
@@ -138,14 +134,13 @@ function Header() {
             sx={{
               flexGrow: 1,
               display: { xs: "none", lg: "flex" },
-              justifyContent: "end",
+              justifyContent: "flex-end",
               mr: 2,
             }}
           >
             {pages.map((page, i) => (
               <Link
                 href={i === 0 ? href[i] : i === 1 ? href[i] : href[i]}
-                underline="none"
                 key={i}
                 onClick={handleCloseNavMenu}
                 sx={{
@@ -198,8 +193,6 @@ function Header() {
                   <Link
                     href={i === 0 ? "/fr" : "/en"}
                     sx={{ width: "100%", py: 1, px: 1.5 }}
-                    underline="none"
-                    color="#000"
                   >
                     {setting}
                   </Link>

@@ -72,7 +72,6 @@ export default function DrawerMenu() {
                     <FolderCopyIcon />
                   )}
                 </ListItemIcon>
-                {/* <ListItemText primary={text} /> */}
                 <Link
                   href={
                     index === 0
@@ -81,9 +80,7 @@ export default function DrawerMenu() {
                       ? href[index]
                       : href[index]
                   }
-                  underline="none"
                   key={index}
-                  color="#5f5f5f"
                 >
                   {text}
                 </Link>
