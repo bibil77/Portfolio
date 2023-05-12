@@ -3,7 +3,9 @@
   "description": "ceci est une description",
   "PO": {
     "title": "PROFIL & OBJECTIFS",
-    "description": "Passionné d'infomatique et de création, j'ai décidé d'en faire mon métier. Je suis actuellement étudiant en <1>développement informatique</1>.Afin de lancer ma carrière et de consolider mon champ de compétences, je suis à la recherche d'une alternance dans la programmation-développement"
+    "description1": "Passionné d'infomatique et de création, j'ai décidé d'en faire mon métier. Je suis actuellement étudiant en ",
+    "description2": "développement informatique.",
+    "description3": "Afin de lancer ma carrière et de consolider mon champ de compétences, je suis à la recherche d'une alternance dans la programmation-développement"
   },
   "formation": {
     "title": "FORMATION",
