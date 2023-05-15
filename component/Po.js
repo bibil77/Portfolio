@@ -6,7 +6,9 @@ export default function Po() {
   return (
     <Card title="PROFIL & OBJECTIFS">
       <Typography color="#4f5050" ml={1}>
-        {t("PO.description")}
+        {t("PO.description1")}
+        <b>{t("PO.description2")}</b>
+        {t("PO.description3")}
       </Typography>
     </Card>
   );
