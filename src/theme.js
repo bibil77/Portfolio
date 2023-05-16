@@ -25,6 +25,17 @@ const theme = createTheme({
   typography: {
     fontFamily: roboto.style.fontFamily,
   },
+  // composant
+  components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: "#5f5f5f",
+          textDecoration: "none",
+        },
+      },
+    },
+  },
 });
 
 export default theme;

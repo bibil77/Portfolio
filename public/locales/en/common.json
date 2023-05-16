@@ -3,7 +3,9 @@
   "description": "this is a description",
   "PO": {
     "title": "PROFILE & OBJECTIVES",
-    "description": "Passionate about computer science and creation, I decided to make my job. I am currently a student in <b>computer development</b>. In order to launch my career and to consolidate my field of competences, I am looking for an alternation in programming-development"
+    "description": "Passionate about computer science and creation, I decided to make my job. I am currently a student in ",
+    "description2": "computer development.",
+    "description3": "In order to launch my career and to consolidate my field of competences, I am looking for an alternation in programming-development"
   },
   "formation": {
     "title": "FORMATION",
