@@ -1,82 +1,35 @@
-import * as React from "react";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import { Avatar, Button, Link } from "@mui/material";
 import { Stack } from "@mui/material";
 
 // component
-import Card from "../component/Card";
-import Po from "../component/Po";
-import FormationCard from "../component/FormationCard";
-import TextCard from "../component/TextCard";
-import Header from "../component/Header";
-import DrawerMenu from "../component/DrawerMenu";
-
-// icon
-import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
-import EmailIcon from "@mui/icons-material/Email";
-import PinDropIcon from "@mui/icons-material/PinDrop";
-import LanguageIcon from "@mui/icons-material/Language";
-import TimeToLeaveIcon from "@mui/icons-material/TimeToLeave";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import Layout from "../component/layout/Layout";
+import ProfileObjective from "../component/view/cv/ProfileObjective";
+import Formations from "../component/view/cv/Formations";
+import Experiences from "../component/view/cv/Experiences";
+import SchoolProjects from "../component/view/cv/SchoolProjects";
+import PersonalInformation from "../component/view/cv/PersonalInformation";
+import Skills from "../component/view/cv/Skills";
+import SoftSkills from "../component/view/cv/SoftSkills";
+import Language from "../component/view/cv/Language";
+import Interest from "../component/view/cv/Interest";
 
 // translate
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 
 export default function Index() {
-  const { t } = useTranslation("common");
   return (
-    <Container sx={{ px: { xs: 0 } }}>
-      {/* --------------HEADER ---------------------*/}
-      <Header />
-      {/* --------------------FIN HEADER----------------------------- */}
+    <Layout>
       <Stack
         sx={{
           flexDirection: { xs: "column", md: "row" },
           justifyContent: "space-between",
         }}
       >
-        {/* ########################################################[COTÉ GAUCHE]######################################################################### */}
         <Stack>
-          {/* -------------------PROFILS & OBEJECT--------------------------- */}
-          <Po />
-          {/* -------------------FIN PROFILS & OBEJECT--------------------------- */}
-          {/* -------------------FORMATION--------------------------- */}
-          <Card border={true} title="FORMATION">
-            <FormationCard
-              date={t("formation.description1.date")}
-              title={t("formation.description1.title")}
-              description={t("formation.description1.text")}
-            />
-            <FormationCard
-              date={t("formation.description2.date")}
-              title={t("formation.description2.title")}
-              list={true}
-              listName="londre"
-            />
-            <FormationCard
-              date={t("formation.description3.date")}
-              title={t("formation.description3.title")}
-              list={true}
-              listName="bac"
-            />
-          </Card>
-          {/* -------------------FIN FORMATION--------------------------- */}
-          {/* -------------------EXPERIENCE--------------------------- */}
-          <Card border={true} title="ep.title">
-            <TextCard title={true} listName="exp" />
-          </Card>
-          {/* -------------------FIN EXPERIENCE--------------------------- */}
-          {/* -------------------PROJET ACADÉMIQUE--------------------------- */}
-          <Card border={true} title="PROJETS ACADÉMIQUE">
-            <TextCard listName="projets" />
-          </Card>
-          {/* -------------------FIN PROJET ACADÉMIQUE--------------------------- */}
+          <ProfileObjective />
+          <Formations />
+          <Experiences />
+          <SchoolProjects />
         </Stack>
-        {/* fin coté gauche */}
-        {/* ########################################################[COTÉ DROIT]######################################################################### */}
-
         <Stack
           sx={{
             borderLeft: { xs: 0, md: 2 },
@@ -85,86 +38,14 @@ export default function Index() {
             mt: 5,
           }}
         >
-          {/* ----------------------INFORMATION PERSONNEL----------------------- */}
-          <Stack direction="row" alignContent="center" ml={2}>
-            <PhoneIphoneIcon sx={{ fill: "#c49366" }} />
-            <Link
-              href="tel:0769309221"
-              fontSize="large"
-              ml={3}
-              underline="none"
-            >
-              07.69.30.92.21
-            </Link>
-          </Stack>
-          <Stack direction="row" alignContent="center" ml={2} mt={3}>
-            <EmailIcon sx={{ fill: "#c49366" }} />
-            <Link
-              href="mailto:dupin.benjamin28@gmail.com"
-              fontSize="large"
-              ml={3}
-              underline="none"
-              sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}
-            >
-              dupin.benjamin28@gmail.com
-            </Link>
-          </Stack>
-          <Stack direction="row" alignContent="center" ml={2} mt={3}>
-            <PinDropIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
-              74 rue de starsbourg, le Mée sur Seine, 77350
-            </Typography>
-          </Stack>
-          <Stack direction="row" alignContent="center" ml={2} mt={3}>
-            <LanguageIcon sx={{ fill: "#c49366" }} />
-            <Link
-              href="https://www.linkedin.com/in/benjaminDupin"
-              fontSize="large"
-              ml={3}
-              underline="none"
-              target="_blank"
-              sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}
-            >
-              www.linkedin.com/in/benjaminDupin
-            </Link>
-          </Stack>
-          <Stack direction="row" alignContent="center" ml={2} mt={3}>
-            <TimeToLeaveIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
-              {t("permis")}
-            </Typography>
-          </Stack>
-          <Stack direction="row" alignContent="center" ml={2} mt={3}>
-            <CalendarMonthIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
-              28/02/2003
-            </Typography>
-          </Stack>
-          {/* ----------------------FIN INFORMATION PERSONNEL----------------------- */}
-          {/* ----------------------COMPÉTENCE IT----------------------- */}
-          <Card title="competence.title" border={true}>
-            <TextCard title={true} listName="competence" />
-          </Card>
-          {/* ----------------------FIN COMPÉTENCE IT----------------------- */}
-          {/* ----------------------SOFT SKILLS----------------------- */}
-          <Card title="ss.title" border={true}>
-            <TextCard listName="skill" />
-          </Card>
-          {/* ----------------------FIN SOFT SKILLS----------------------- */}
-          {/* ----------------------LANGUES----------------------- */}
-          <Card title="lang.title" border={true}>
-            <TextCard listName="lang" />
-          </Card>
-          {/* ----------------------FIN LANGUES----------------------- */}
-          {/* ----------------------CENTRE D'INTÉRÊT----------------------- */}
-          <Card title="ci.title" border={true}>
-            <TextCard listName="centreIt" />
-          </Card>
-          {/* ----------------------FIN CENTRE D'INTÉRÊT----------------------- */}
+          <PersonalInformation />
+          <Skills />
+          <SoftSkills />
+          <Language />
+          <Interest />
         </Stack>
-        {/* fin coté droit */}
       </Stack>
-    </Container>
+    </Layout>
   );
 }
 
