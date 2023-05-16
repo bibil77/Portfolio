@@ -88,9 +88,14 @@ export default function Index() {
           {/* ----------------------INFORMATION PERSONNEL----------------------- */}
           <Stack direction="row" alignContent="center" ml={2}>
             <PhoneIphoneIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Link
+              href="tel:0769309221"
+              fontSize="large"
+              ml={3}
+              underline="none"
+            >
               07.69.30.92.21
-            </Typography>
+            </Link>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <EmailIcon sx={{ fill: "#c49366" }} />
@@ -99,7 +104,6 @@ export default function Index() {
               fontSize="large"
               ml={3}
               underline="none"
-              color="#000"
               sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}
             >
               dupin.benjamin28@gmail.com
@@ -117,7 +121,6 @@ export default function Index() {
               href="https://www.linkedin.com/in/benjaminDupin"
               fontSize="large"
               ml={3}
-              color="#000"
               underline="none"
               target="_blank"
               sx={{ overflowWrap: { xs: "anywhere", sm: "normal" } }}

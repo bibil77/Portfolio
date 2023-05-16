@@ -14,7 +14,6 @@ export default function MyDocument(props) {
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
         {/* <link rel="shortcut icon" href="/favicon.ico" /> */}
-        <meta name="format-detection" content="telephone=no"></meta>
         <meta name="emotion-insertion-point" content="" />
         {emotionStyleTags}
       </Head>
