@@ -34,7 +34,7 @@ function PersonalInformation() {
       <Stack direction="row" alignContent="center" ml={2} mt={3}>
         <PinDropIcon sx={{ fill: "#c49366" }} />
         <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
-          74 rue de starsbourg, le Mée sur Seine, 77350
+          Le Mée sur Seine, 77350
         </Typography>
       </Stack>
       <Stack direction="row" alignContent="center" ml={2} mt={3}>
