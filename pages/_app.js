@@ -5,7 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
 import theme from "../src/theme";
-import createEmotionCache from "../src/createEmotionCache";
+import createEmotionCache from "../src/utils/createEmotionCache";
 
 // translate
 import { appWithTranslation } from "next-i18next";

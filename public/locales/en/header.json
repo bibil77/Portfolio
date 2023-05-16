@@ -3,7 +3,7 @@
   "lang": {
     "title": "Languages",
     "fr": "French",
-    "flag": "./images/english.jpg",
+    "flag": "en",
     "en": "English",
     "setting": "Open the language menu",
     "nav": {

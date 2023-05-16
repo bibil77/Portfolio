@@ -159,7 +159,7 @@ function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title={t("lang.setting")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Lang Flag" src={t("lang.flag")} sx={{ mt: 1.5 }}>
+                <Avatar alt="Lang Flag" src={`/images/flag/${t("lang.flag")}.jpg`} sx={{ mt: 1.5 }}>
                   BD
                 </Avatar>
               </IconButton>
