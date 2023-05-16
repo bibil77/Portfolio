@@ -1,8 +1,8 @@
-import { Roboto } from "next/font/google";
+import { Source_Sans_Pro } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
-export const roboto = Roboto({
+export const font = Source_Sans_Pro({
   weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
@@ -23,7 +23,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: roboto.style.fontFamily,
+    fontFamily: font.style.fontFamily,
   },
   // composant
   components: {

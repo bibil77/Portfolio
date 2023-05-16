@@ -1,5 +1,5 @@
 import { Stack, Typography } from "@mui/material";
-import data from "../data.js";
+import data from "../../data.js";
 import { useTranslation } from "next-i18next";
 
 export default function TextCard({ title, listName }) {

@@ -1,16 +1,16 @@
 import { Stack } from "@mui/material";
 
 // component
-import Layout from "../component/layout/Layout";
-import ProfileObjective from "../component/view/cv/ProfileObjective";
-import Formations from "../component/view/cv/Formations";
-import Experiences from "../component/view/cv/Experiences";
-import SchoolProjects from "../component/view/cv/SchoolProjects";
-import PersonalInformation from "../component/view/cv/PersonalInformation";
-import Skills from "../component/view/cv/Skills";
-import SoftSkills from "../component/view/cv/SoftSkills";
-import Language from "../component/view/cv/Language";
-import Interest from "../component/view/cv/Interest";
+import Layout from "../src/component/layout/Layout";
+import ProfileObjective from "../src/component/view/cv/ProfileObjective";
+import Formations from "../src/component/view/cv/Formations";
+import Experiences from "../src/component/view/cv/Experiences";
+import SchoolProjects from "../src/component/view/cv/SchoolProjects";
+import PersonalInformation from "../src/component/view/cv/PersonalInformation";
+import Skills from "../src/component/view/cv/Skills";
+import SoftSkills from "../src/component/view/cv/SoftSkills";
+import Language from "../src/component/view/cv/Language";
+import Interest from "../src/component/view/cv/Interest";
 
 // translate
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
