@@ -2,14 +2,14 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 import createEmotionServer from "@emotion/server/create-instance";
-import theme, { roboto } from "../src/theme";
+import theme, { font } from "../src/theme";
 import createEmotionCache from "../src/createEmotionCache";
 
 export default function MyDocument(props) {
   const { emotionStyleTags } = props;
 
   return (
-    <Html lang="fr" className={roboto.className}>
+    <Html lang="fr" className={font.className}>
       <Head>
         {/* PWA primary color */}
         <meta name="theme-color" content={theme.palette.primary.main} />
