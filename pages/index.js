@@ -111,7 +111,7 @@ export default function Index() {
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <PinDropIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
               74 rue de starsbourg, le Mée sur Seine, 77350
             </Typography>
           </Stack>
@@ -130,13 +130,13 @@ export default function Index() {
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <TimeToLeaveIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
               {t("permis")}
             </Typography>
           </Stack>
           <Stack direction="row" alignContent="center" ml={2} mt={3}>
             <CalendarMonthIcon sx={{ fill: "#c49366" }} />
-            <Typography variant="body" fontSize="large" ml={3}>
+            <Typography variant="body" fontSize="large" ml={3} color="#5f5f5f">
               28/02/2003
             </Typography>
           </Stack>
