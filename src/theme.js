@@ -3,7 +3,7 @@ import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
 export const font = Source_Sans_Pro({
-  weight: ["300", "400", "500", "700"],
+  weight: ["300", "400", "600", "700"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
