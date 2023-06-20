@@ -35,32 +35,42 @@
   "ep": {
     "title": "EXPÉRIENCES PROFESSIONNELS",
     "description1": {
-      "title": "2018-Technicien informatique (Stage) à la mairie de Lésigny",
+      "title": "2023 - Développeur chez Vegout (Stage)",
       "text": {
-        "0": "Maintenance curatives téléphonques, sur un réseau internet ainsique diverse maintenance informatique",
-        "1": "Fait de la création/ gestion d'adresse mail"
+        "0": "Développeur web (Next.js), réalisation de plusieurs projets web",
+        "1": "Utilisation d'api",
+        "2": "Création d'une map personnalisée",
+        "3": "Gestion de projets et du temps (Trello)",
+        "4": "Déploiement de sites web"
       }
     },
     "description2": {
-      "title": "2017- Technicien biomédicale (stage) dans l'ancienne clinique Saint-Jean au Mée Sur Seine",
-      "text": "Maintenance et réparation sur plusieurs machines chirurgical"
+      "title": "2022 - Développeur chez My'Po (Stage)",
+      "text": {
+        "0": "Développement web et interaction avec une base de donnée",
+        "1": "Création de scripts VBA pour de la gestion de données"
+      }
     }
   },
   "pa": {
     "title": "PROJETS ACADÉMIQUE",
     "text": {
       "0": "Projet Dice: Création d'une application pour Dice Board GameLounge",
-      "1": "Projet Netflix: Projet réalise en avril 2022 avec l'utilisation de HTMLS/ CSS3: copie conforme de la page Home de Netflix"
+      "1": "Projet Hoopers: Création d'un serveur de jeu scripté, sur une base de jeu déjà existant"
     }
   },
   "permis": "Permis B (Véhiculé)",
   "competence": {
     "title": "COMPÉTENCE IT",
     "description1": {
-      "title": "Outils de développement/ programmation:"
+      "title": "Outils de développement | programmation:"
     },
     "description2": {
-      "title": "Outils bureautiques:"
+      "title": "Outils bureautiques:",
+      "text": {
+        "0": "Microsoft Office",
+        "1": "Trello"
+      }
     },
     "description3": {
       "title": "Autre:",
@@ -72,7 +82,7 @@
     "text": {
       "0": "Autodidacte",
       "1": "Autonome",
-      "2": "Faire des rétroplannings",
+      "2": "Gestion de projets",
       "3": "Esprit d'équipe"
     }
   },

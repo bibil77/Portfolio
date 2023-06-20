@@ -5,7 +5,7 @@
     "title": "PROFILE & OBJECTIVES",
     "description1": "Passionate about computer science and creation, I decided to make my job. I am currently a student in ",
     "description2": "computer development.",
-    "description3": "In order to launch my career and to consolidate my field of competences, I am looking for an alternation in programming-development"
+    "description3": "In order to launch my career and to consolidate my field of competences, I am looking for an apprenticeship in programming-development"
   },
   "formation": {
     "title": "FORMATION",
@@ -35,22 +35,28 @@
   "ep": {
     "title": "PROFESSIONAL EXPERIENCES",
     "description1": {
-      "title": "2018-Computer technician (Internship) at the city hall of Lésigny",
+      "title": "2023 - Developer at Vegout (Internship)",
       "text": {
-        "0": "Curative telephone maintenance, on an internet network as well as various computer maintenance",
-        "1": "Fact of the creation / administration of email address"
+        "0": "Web developer (Next.js), realization of several web projects",
+        "1": "Using api",
+        "2": "Creating a custom map",
+        "3": "Project and time management (Trello)",
+        "4": "Website deployment"
       }
     },
     "description2": {
-      "title": "2017- Biomedical technician (internship) at the former Saint-Jean clinic in Le Mée Sur Seine",
-      "text": "Maintenance and repair of several surgical machines"
+      "title": "2022 - Developer at My'Po (Internship)",
+      "text": {
+        "0": "Web development and database interaction",
+        "1": "Creation of VBA scripts for data management"
+      }
     }
   },
   "pa": {
     "title": "ACADEMIC PROJECTS",
     "text": {
       "0": "Dice Project: Creation of an application for Dice Board GameLounge",
-      "1": "Netflix Project: Project realized in April 2022 with the use of HTMLS/ CSS3: carbon copy of the Netflix Home page"
+      "1": "Hoopers project: Creation of a scripted game server, based on an existing game"
     }
   },
   "permis": "Driver's License (Vehicle)",
@@ -60,7 +66,11 @@
       "title": "Development tools/ programming:"
     },
     "description2": {
-      "title": "Office tools:"
+      "title": "Office tools:",
+      "text": {
+        "0": "Microsoft Office",
+        "1": "Trello"
+      }
     },
     "description3": {
       "title": "Other:",
@@ -72,7 +82,7 @@
     "text": {
       "0": "Self-taught",
       "1": "Autonomous",
-      "2": "Doing reverse scans",
+      "2": "Project management",
       "3": "Team spirit"
     }
   },

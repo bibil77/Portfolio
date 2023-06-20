@@ -19,11 +19,17 @@ const data = [
     contenue: [
       {
         titre: "ep.description1.title",
-        description: ["ep.description1.text.0", "ep.description1.text.1"],
+        description: [
+          "ep.description1.text.0",
+          "ep.description1.text.1",
+          "ep.description1.text.2",
+          "ep.description1.text.3",
+          "ep.description1.text.4",
+        ],
       },
       {
         titre: "ep.description2.title",
-        description: ["ep.description2.text"],
+        description: ["ep.description2.text.0", "ep.description2.text.1"],
       },
     ],
   },
@@ -40,17 +46,14 @@ const data = [
     contenue: [
       {
         titre: "competence.description1.title",
-        description: [
-          "HTML & CSS",
-          "Javascript/ Java",
-          "SQL",
-          "React | NextJS",
-          "firebase",
-        ],
+        description: ["Javascript/ Java", "SQL", "React | NextJS", "firebase"],
       },
       {
         titre: "competence.description2.title",
-        description: ["Microsoft Office"],
+        description: [
+          "competence.description2.text.0",
+          "competence.description2.text.1",
+        ],
       },
       {
         titre: "competence.description3.title",
