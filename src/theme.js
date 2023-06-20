@@ -1,9 +1,9 @@
-import { Source_Sans_Pro } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
 
-export const font = Source_Sans_Pro({
-  weight: ["300", "400", "600", "700"],
+export const font = Poppins({
+  weight: ["300", "400", "500", "700"],
   subsets: ["latin"],
   display: "swap",
   fallback: ["Helvetica", "Arial", "sans-serif"],
