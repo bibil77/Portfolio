@@ -5,7 +5,6 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Tooltip from "@mui/material/Tooltip";
@@ -94,6 +93,38 @@ function Header() {
             >
               {t("title")}
             </Typography>
+            <Stack sx={{ position: "absolute", bottom: 5, right: 0 }}>
+              <Typography
+                variant="subtitle2"
+                component="p"
+                noWrap
+                sx={{
+                  ml: 3,
+                  mt: 1,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                {t("alternance")}
+              </Typography>
+              <Typography
+                variant="subtitle2"
+                component="p"
+                noWrap
+                sx={{
+                  ml: 3,
+                  mt: 1,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                {t("rythme")}
+              </Typography>
+            </Stack>
           </Stack>
           <Stack sx={{ display: { xs: "flex", md: "none" } }}>
             <Typography
@@ -121,7 +152,6 @@ function Header() {
                 mt: 1,
                 fontFamily: "monospace",
                 fontWeight: 700,
-                // letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
               }}
@@ -159,7 +189,11 @@ function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title={t("lang.setting")}>
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Lang Flag" src={`/images/flag/${t("lang.flag")}.jpg`} sx={{ mt: 1.5 }}>
+                <Avatar
+                  alt="Lang Flag"
+                  src={`/images/flag/${t("lang.flag")}.jpg`}
+                  sx={{ mt: 1.5 }}
+                >
                   BD
                 </Avatar>
               </IconButton>

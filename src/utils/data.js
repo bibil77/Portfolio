@@ -31,6 +31,14 @@ const data = [
         titre: "ep.description2.title",
         description: ["ep.description2.text.0", "ep.description2.text.1"],
       },
+      {
+        titre: "ep.description3.title",
+        description: ["ep.description3.text.0", "ep.description3.text.1"],
+      },
+      {
+        titre: "ep.description4.title",
+        description: ["ep.description4.text.0"],
+      },
     ],
   },
   {
@@ -46,7 +54,13 @@ const data = [
     contenue: [
       {
         titre: "competence.description1.title",
-        description: ["Javascript/ Java", "SQL", "React | NextJS", "firebase"],
+        description: [
+          "Javascript | Java",
+          "SQL",
+          "React | NextJS",
+          "jQuery",
+          "Laravel",
+        ],
       },
       {
         titre: "competence.description2.title",
@@ -81,7 +95,7 @@ const data = [
     name: "centreIt",
     contenue: [
       {
-        description: ["ci.text.0", "ci.text.1", "ci.text.2", "ci.text.3"],
+        description: ["ci.text.0", "ci.text.1", "ci.text.2"],
       },
     ],
   },

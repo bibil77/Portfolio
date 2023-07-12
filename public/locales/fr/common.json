@@ -2,29 +2,28 @@
   "title": "ceci est un titre",
   "description": "ceci est une description",
   "PO": {
-    "title": "PROFIL & OBJECTIFS",
-    "description1": "Passionné d'infomatique et de création, j'ai décidé d'en faire mon métier. Je suis actuellement étudiant en ",
-    "description2": "développement informatique.",
-    "description3": "Afin de lancer ma carrière et de consolider mon champ de compétences, je suis à la recherche d'une alternance dans la programmation-développement"
+    "title": "PROFIL",
+    "description1": "Passionné d'infomatique et de création, j'ai décidé d'en faire mon métier.",
+    "description2": " Actuellement à la recherche d'une alternance d'un an avec un rythme d'une semaine d'école et deux semaines en entreprise."
   },
   "formation": {
     "title": "FORMATION",
     "description1": {
-      "date": "DEPUIS 2021 EFREI PARIS",
-      "title": "LICENCE INGÉNERIE & NUMÉRIQUES",
+      "date": "2021 - 2024 EFREI PARIS",
+      "title": "LICENCE INGÉNERIE & NUMÉRIQUES (1er et 2ième années en initial et 3ième année en alternance)",
       "text": "Mathématiques, Anglais, Communication, Javascript, système d'exploitation, SQL, Node JS, HTML/CSS, ReactJS / native, firebase"
     },
     "description2": {
-      "date": "DU 05/02/2023 au 18/03/2023 EFREI PARIS",
-      "title": "PROJET ACADÉMIQUE À LONDRES ( 6 SEMAINES) Porthsmouth university",
+      "date": "Février - Mars 2023 EFREI PARIS",
+      "title": "FORMATION ACADÉMIQUE À LONDRES (Porthsmouth university)",
       "text": {
-        "0": "Réalisation d'une application suivant les attentes d'un client",
+        "0": "Création d'une application suivant les attentes d'un client (Dice Board GameLounge)",
         "1": "Cours: management, gestion d'équipe,intelligence artificielle"
       }
     },
     "description3": {
       "date": "2020-2021 GEORGE SAND",
-      "title": "BACCALAURÉAT GÉNÉRAL",
+      "title": "BACCALAURÉAT GÉNÉRAL (Mention assez bien)",
       "text": {
         "0": "Spécialité Mathématique",
         "1": "Spécialité Science de l'ingénieur",
@@ -50,13 +49,26 @@
         "0": "Développement web et interaction avec une base de donnée",
         "1": "Création de scripts VBA pour de la gestion de données"
       }
+    },
+    "description3": {
+      "title": "2018 - Technicien informatique (Stage d'une semaine)",
+      "text": {
+        "0": "Maintenance curatives téléphoniques et  informatique",
+        "1": "Création | gestion d'adresse mail"
+      }
+    },
+    "description4": {
+      "title": "2017 - Technicien biomédical (Stage d'une semaine)",
+      "text": {
+        "0": "Maintenance et réparation sur plusieurs machines chirurgicales"
+      }
     }
   },
   "pa": {
-    "title": "PROJETS ACADÉMIQUE",
+    "title": "PROJETS PERSONNELS",
     "text": {
-      "0": "Projet Dice: Création d'une application pour Dice Board GameLounge",
-      "1": "Projet Hoopers: Création d'un serveur de jeu scripté, sur une base de jeu déjà existant"
+      "0": "Projet Hoopers: Création d'un serveur de jeu scripté, sur une base de jeu déjà existant",
+      "1": "Projet Bot Discord: Création d'un bot discord dans le but d'automatiser des tâches récurrentes"
     }
   },
   "permis": "Permis B (Véhiculé)",
@@ -96,10 +108,9 @@
   "ci": {
     "title": "CENTRE D'INTÉRÊT",
     "text": {
-      "0": "VTT: de descente et en forêt",
-      "1": "Cinéma (science fiction, thriller)",
-      "2": "Jeux vidéo (fps, gestion, survie,mini-jeux)",
-      "3": "Karting (course entre amis)"
+      "0": "VTT : de descente et en forêt",
+      "1": "Jeux vidéo (fps, gestion, survie,mini-jeux)",
+      "2": "Course Automobile"
     }
   }
 }
