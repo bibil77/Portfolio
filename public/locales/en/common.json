@@ -3,16 +3,16 @@
   "description": "this is a description",
   "PO": {
     "title": "PROFILE & OBJECTIVES",
-    "description1": "Passionate about computer science and creation, I decided to make my job. I am currently a student in ",
+    "description1": "Passionate about computer science and creation, I decided to make my job.",
     "description2": "computer development.",
     "description3": "In order to launch my career and to consolidate my field of competences, I am looking for an apprenticeship in programming-development"
   },
   "formation": {
-    "title": "FORMATION",
+    "title": "FORMATIONS",
     "description1": {
       "date": "SINCE 2021 EFREI PARIS",
       "title": "ENGINEERING & DIGITAL LICENSE",
-      "text": "Mathematics, English, Communication, Javascript, système d'exploitation, SQL, Node JS, HTML & CSS, ReactjJS / native, firebase"
+      "text": "Mathematics, English, Communication, Javascript, système d'exploitation, SQL, Node JS, API, HTML/CSS, sass, ReactJS / native, NextJs, MUI, ReactjJS / native, firebase"
     },
     "description2": {
       "date": "FROM 05/02/2023 to 18/03/2023 EFREI PARIS",
@@ -53,10 +53,10 @@
     }
   },
   "pa": {
-    "title": "ACADEMIC PROJECTS",
+    "title": "PERSONALS PROJECTS",
     "text": {
       "0": "Dice Project: Creation of an application for Dice Board GameLounge",
-      "1": "Hoopers project: Creation of a scripted game server, based on an existing game"
+      "1": "Hoopers project: Creation of a scripted game server, based on an existing game."
     }
   },
   "permis": "Driver's License (Vehicle)",

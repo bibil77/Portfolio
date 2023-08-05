@@ -59,7 +59,7 @@ const data = [
           "SQL",
           "React | NextJS",
           "jQuery",
-          "Laravel",
+          "Git",
         ],
       },
       {

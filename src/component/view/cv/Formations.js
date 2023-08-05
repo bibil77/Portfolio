@@ -5,7 +5,7 @@ import FormationCard from "../../FormationCard";
 function Formations() {
   const { t } = useTranslation("common");
   return (
-    <Card border={true} title="FORMATION">
+    <Card border={true} title="FORMATIONS">
       <FormationCard
         date={t("formation.description1.date")}
         title={t("formation.description1.title")}
