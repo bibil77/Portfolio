@@ -22,22 +22,29 @@ const data = [
         description: [
           "ep.description1.text.0",
           "ep.description1.text.1",
-          "ep.description1.text.2",
-          "ep.description1.text.3",
-          "ep.description1.text.4",
         ],
       },
       {
         titre: "ep.description2.title",
-        description: ["ep.description2.text.0", "ep.description2.text.1"],
+        description: [
+          "ep.description2.text.0",
+          "ep.description2.text.1",
+          "ep.description2.text.2",
+          "ep.description2.text.3",
+          "ep.description2.text.4",
+        ],
       },
       {
         titre: "ep.description3.title",
-        description: ["ep.description3.text.0", "ep.description3.text.1"],
+        description: ["ep.description3.text.0", "ep.description2.text.1"],
       },
       {
         titre: "ep.description4.title",
-        description: ["ep.description4.text.0"],
+        description: ["ep.description4.text.0", "ep.description3.text.1"],
+      },
+      {
+        titre: "ep.description5.title",
+        description: ["ep.description5.text.0"],
       },
     ],
   },

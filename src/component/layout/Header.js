@@ -62,7 +62,7 @@ function Header() {
           <Stack sx={{ display: { xs: "none", md: "flex" } }}>
             <Typography
               noWrap
-              variant="h4"
+              variant="h3"
               component="h1"
               sx={{
                 ml: { xs: 0, lg: 3 },
@@ -78,12 +78,12 @@ function Header() {
               BENJAMIN DUPIN
             </Typography>
             <Typography
-              variant="h6"
+              variant="h5"
               component="h2"
               noWrap
               sx={{
                 ml: 6,
-                mt: 1,
+                mt: 3,
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
@@ -93,6 +93,7 @@ function Header() {
             >
               {t("title")}
             </Typography>
+            {/*
             <Stack sx={{ position: "absolute", bottom: 5, right: 0 }}>
               <Typography
                 variant="subtitle2"
@@ -125,6 +126,7 @@ function Header() {
                 {t("rythme")}
               </Typography>
             </Stack>
+            */}
           </Stack>
           <Stack sx={{ display: { xs: "flex", md: "none" } }}>
             <Typography
@@ -169,10 +171,11 @@ function Header() {
             }}
           >
             {pages.map((page, i) => (
-              <Link
+              <Typography
                 href={i === 0 ? href[i] : i === 1 ? href[i] : href[i]}
                 key={i}
                 onClick={handleCloseNavMenu}
+                title="Coming Soon"
                 sx={{
                   mt: 3,
                   fontWeight: 500,
@@ -182,7 +185,7 @@ function Header() {
                 }}
               >
                 {page}
-              </Link>
+              </Typography>
             ))}
           </Box>
 

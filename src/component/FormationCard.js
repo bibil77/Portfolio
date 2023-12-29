@@ -16,7 +16,7 @@ export default function FormationCard({
       result.push(
         datas.description.map((d, i) => {
           return (
-            <Typography key={i} variant="subtitle1" color="#3f4040">
+            <Typography key={i} variant="subtitle1" color="#3f4040" ml={2}>
               • {t(d)}
             </Typography>
           );
@@ -61,7 +61,7 @@ export default function FormationCard({
           color="#3f4040"
           sx={{
             marginTop: { xs: 3, md: 0 },
-            textAlign: { xs: "center", md: "none" },
+            textAlign: { xs: "center", md: "left" },
           }}
         >
           {title}
@@ -69,7 +69,7 @@ export default function FormationCard({
         {list ? (
           result
         ) : (
-          <Typography color="#4f5050" variant="subtitle1">
+          <Typography color="#4f5050" variant="subtitle1" ml={2}>
             {description}
           </Typography>
         )}

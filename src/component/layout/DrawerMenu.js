@@ -16,7 +16,7 @@ import ArrowCircleUpIcon from "@mui/icons-material/ArrowCircleUp";
 import FolderCopyIcon from "@mui/icons-material/FolderCopy";
 
 export default function DrawerMenu() {
-  const href = ["/", "/", "/Exemple"];
+  const href = ["/", "/", "/"];
 
   const { t } = useTranslation("header");
   const [state, setState] = React.useState({
@@ -73,12 +73,13 @@ export default function DrawerMenu() {
                   )}
                 </ListItemIcon>
                 <Link
+                  title="Coming Soon"
                   href={
                     index === 0
                       ? href[index]
                       : index === 1
-                      ? href[index]
-                      : href[index]
+                        ? href[index]
+                        : href[index]
                   }
                   key={index}
                 >

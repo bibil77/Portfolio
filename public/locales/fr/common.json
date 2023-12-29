@@ -9,8 +9,8 @@
   "formation": {
     "title": "FORMATIONS",
     "description1": {
-      "date": "2021 - 2024 EFREI PARIS",
-      "title": "LICENCE INGÉNERIE & NUMÉRIQUES (1er et 2ième années en initial et 3ième année en alternance)",
+      "date": "2021 - 2024 EFREI PARIS‎ ‎ ‎",
+      "title": "LICENCE INGÉNERIE & NUMÉRIQUES",
       "text": "Mathématiques, Anglais, Communication, Javascript, système d'exploitation, SQL, Node JS, API, HTML/CSS, sass, ReactJS / native, NextJs, MUI, firebase"
     },
     "description2": {
@@ -34,6 +34,13 @@
   "ep": {
     "title": "EXPÉRIENCES PROFESSIONNELS",
     "description1": {
+      "title": "2023 - Opérateur de trie chez Colissimo | Restauration en clinique",
+      "text": {
+        "0": "Chargement | Déchargement | trie de colis",
+        "1": "Préparation froide | plonge"
+      }
+    },
+    "description2": {
       "title": "2023 - Développeur chez Vegout (Stage)",
       "text": {
         "0": "Développeur web (Next.js), réalisation de plusieurs projets web",
@@ -43,22 +50,22 @@
         "4": "Déploiement de sites web"
       }
     },
-    "description2": {
+    "description3": {
       "title": "2022 - Développeur chez My'Po (Stage)",
       "text": {
         "0": "Développement web et interaction avec une base de donnée",
         "1": "Création de scripts VBA pour de la gestion de données"
       }
     },
-    "description3": {
-      "title": "2018 - Technicien informatique (Stage d'une semaine)",
+    "description4": {
+      "title": "2018 - Technicien informatique (Stage)",
       "text": {
         "0": "Maintenance curatives téléphoniques et  informatique",
         "1": "Création | gestion d'adresse mail"
       }
     },
-    "description4": {
-      "title": "2017 - Technicien biomédical (Stage d'une semaine)",
+    "description5": {
+      "title": "2017 - Technicien biomédical (Stage)",
       "text": {
         "0": "Maintenance et réparation sur plusieurs machines chirurgicales"
       }
@@ -71,7 +78,7 @@
       "1": "Projet Bot Discord: Création d'un bot discord dans le but d'automatiser des tâches récurrentes."
     }
   },
-  "permis": "Permis B (Véhiculé)",
+  "permis": "Permis B | A2 (Véhiculé)",
   "competence": {
     "title": "COMPÉTENCE IT",
     "description1": {
